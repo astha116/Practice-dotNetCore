@@ -1,0 +1,9 @@
+<form [formGroup]="userForm">
+<!-- <div><h6>ID</h6><input formControlName="id"></div> -->
+<div><h6>Name</h6><input formControlName="name"></div>
+<button type="submit" (click)="onSubmit()">Submit</button>
+</form>
+<div *ngFor="let d of get">
+  {{d.id}}
+  {{d.name}}  
+</div>
